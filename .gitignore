@@ -1,0 +1,4 @@
+/.idea
+/api/.venv
+/client/node_modules
+/client/dist
