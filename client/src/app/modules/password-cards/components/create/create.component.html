@@ -1,0 +1,4 @@
+<button class="createPassword" mat-button (click)="clickNewPassword()" matTooltip="New Password">
+  <mat-icon aria-hidden="false" aria-label="Example add icon" fontIcon="add">add</mat-icon>
+</button>
+<app-form (fetchCards)="fetchCards()" (closeForm)="clickNewPassword()" [card]="this.newCard" [index]="-1" *ngIf="this.showForm"></app-form>

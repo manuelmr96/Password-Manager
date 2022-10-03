@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-title>{{card.name}}</mat-card-title>
+  <mat-card-subtitle>UserName: {{card.username}}</mat-card-subtitle>
+  <button mat-button class="copy" (click)="copy(card)" matTooltip="Copy Password">
+    <mat-icon aria-hidden="false" aria-label="Example content_copy icon" fontIcon="content_copy">content_copy</mat-icon>
+  </button>
+  <mat-card-actions>
+    <button mat-button (click)="update()" matTooltip="Update Password">
+      <mat-icon aria-hidden="false" aria-label="Example edit icon" fontIcon="edit">edit</mat-icon>
+    </button>
+    <button mat-button (click)="login(card)" matTooltip="Take me to the page">
+      <mat-icon aria-hidden="false" aria-label="Example login icon" fontIcon="login">login</mat-icon>
+    </button>
+    <button mat-button (click)="delete()" matTooltip="Take me to the page">
+      <mat-icon aria-hidden="false" aria-label="Example delete icon" fontIcon="delete">delete</mat-icon>
+    </button>
+  </mat-card-actions>
+</mat-card>
+<app-form (fetchCards)="this.fetchCards.emit()" (closeForm)="update()" [card]="this.card" [index]="index" *ngIf="this.showForm"></app-form>

@@ -1,0 +1,46 @@
+.flex-12{
+  width: 13%;
+  margin: 1.5%;
+}
+
+@media only screen and (max-width: 600px) {
+  .flex-12{
+    width: 97%;
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+  .flex-12{
+    width: 47%;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .flex-12{
+    width: 30%;
+  }
+}
+
+
+@media only screen and (min-width: 992px) {
+  .flex-12{
+    width: 22%;
+  }
+}
+
+
+@media only screen and (min-width: 1500px) {
+  .flex-12{
+    width: 17%;
+
+  }
+}
+
+@media only screen and (min-width: 1900px) {
+  .flex-12{
+    width: 13%;
+
+  }
+}

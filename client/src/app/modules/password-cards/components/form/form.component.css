@@ -1,0 +1,27 @@
+.dialog{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  vertical-align: middle;
+  justify-content: center;
+}
+.dialog .mat-card{
+  max-width: 245px;
+  align-self: center;
+}
+
+.flex-center{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mat-form-field{
+  width: 236px;
+}

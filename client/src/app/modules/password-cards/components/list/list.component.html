@@ -1,0 +1,4 @@
+
+<div *ngFor="let card of cards; let i = index;" class="flex-12">
+  <app-details [card]="card" [index]="i" (fetchCards)="fetchCards()" ></app-details>
+</div>
